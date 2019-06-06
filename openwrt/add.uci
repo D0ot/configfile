@@ -1,0 +1,29 @@
+delete dhcp.host_desktop
+set dhcp.host_desktop=host
+set dhcp.host_desktop.ip=192.168.1.180
+set dhcp.host_desktop.mac=70:85:C2:75:12:F1
+set dhcp.host_desktop.dns=1
+set dhcp.host_desktop.name=des
+
+delete dhcp.host_laptop
+set dhcp.host_laptop=host
+set dhcp.host_laptop.ip=192.168.1.181
+set dhcp.host_laptop.mac=38:BA:F8:29:19:59
+set dhcp.host_laptop.dns=1
+set dhcp.host_laptop.name=lap
+
+delete dhcp.host_phone
+set dhcp.host_phone=host
+set dhcp.host_phone.ip=192.168.1.182
+set dhcp.host_phone.mac=4C:49:E3:C8:78:BC
+set dhcp.host_phone.dns=1
+set dhcp.host_phone.name=pho
+
+
+
+delete dhcp.router
+set dhcp.router=domain
+set dhcp.router.ip=192.168.1.1
+set dhcp.router.name=router
+
+commit
