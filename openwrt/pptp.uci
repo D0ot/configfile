@@ -1,0 +1,6 @@
+set network.robocup=interface
+set network.robocup.proto=pptp
+set network.robocup.server=172.18.72.15
+set network.robocup.username=robocup
+set network.robocup.password=123456
+
