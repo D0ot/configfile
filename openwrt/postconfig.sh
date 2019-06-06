@@ -9,6 +9,7 @@ opkg install bash
 
 echo "Run postconfig2.sh"
 
+chmod +x ./postconfig2.sh
 ./postconfig2.sh
 
 echo "Post postconfig End"

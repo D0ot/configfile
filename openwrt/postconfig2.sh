@@ -5,7 +5,8 @@
 
 echo "Install common packages"
 opkg install vim
-
+opkg install git
+opkg install openssh-client
 
 echo "pptp support"
 opkg install ppp-mod-pptp
