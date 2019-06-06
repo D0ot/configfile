@@ -10,6 +10,7 @@ opkg install openssh-client
 
 echo "pptp support"
 opkg install ppp-mod-pptp kmod-nf-nathelper-extra luci-proto-ppp kmod-ipt-raw
+uci batch < ./pptp.uci
 
 echo "static ip and host name"
 
