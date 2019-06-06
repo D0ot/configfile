@@ -7,9 +7,10 @@ echo "Install common packages"
 opkg install vim
 
 
-echo "Add pptp support"
+echo "pptp support"
 opkg install ppp-mod-pptp
 opkg install luci-proto-ppp
 
-echo "Add host names"
+echo "static ip and host name"
 
+uci batch < ./add.uci
