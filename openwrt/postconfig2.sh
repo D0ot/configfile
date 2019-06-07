@@ -32,6 +32,10 @@ uci batch < .wlan.uci
 
 echo "Config SAMBA"
 opkg list | grep -e "samba.*-server" | cut -f 1 -d ' ' | xarg opkg install
-opkg install luci-app-samba
 uci batch < ./samba.uci 
+echo "Now you can configure the samba server web"
+echo "Dont forget add permision to shared folder"
+
+
+
 
