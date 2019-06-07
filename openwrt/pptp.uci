@@ -3,4 +3,21 @@ set network.robocup.proto=pptp
 set network.robocup.server=172.18.72.15
 set network.robocup.username=robocup
 set network.robocup.password=123456
+
+set firewall.tag_vpn_zone=zone
+set firewall.tag_vpn_zone.forward=REJECT
+set firewall.tag_vpn_zone.output=ACCEPT
+set firewall.tag_vpn_zone.input=REJECT
+set firewall.tag_vpn_zone.name=vpn_zone
+set firewall.tag_vpn_zone.masq=1
+set firewall.tag_vpn_zone.mtu_fix=1
+set firewall.tag_vpn_zone.network=robocup
+
+set firewall.tag_forwarding1=forwarding
+set firewall.tag_forwarding1.dest=vpn_zone
+set firewall.tag_forwarding1.src=lan
+
+
+
+
 commit

@@ -1,0 +1,9 @@
+set fstab.sda2=mount
+set fstab.sda2.device=/dev/sda2
+set fstab.sda2.target=/mnt/sda2
+
+set fstab.sda3=mount
+set fstab.sda3.device=/dev/sda3
+set fstab.sda3.target=/mnt/sda3
+
+commit

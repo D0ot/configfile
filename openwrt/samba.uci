@@ -1,0 +1,23 @@
+set firewall.tag_port1=rule
+set firewall.tag_port1.src=lan
+set firewall.tag_port1.proto=udp
+set firewall.tag_port1.dest_port=137-138
+set firewall.tag_port1.taget=ACCEPT
+
+
+
+
+set firewall.tag_port2=rule
+set firewall.tag_port2.src=lan
+set firewall.tag_port2.proto=tcp
+set firewall.tag_port2.dest_port=139
+set firewall.tag_port2.taget=ACCEPT
+
+
+set firewall.tag_port3=rule
+set firewall.tag_port3.src=lan
+set firewall.tag_port3.proto=tcp
+set firewall.tag_port3.dest_port=445
+set firewall.tag_port3.target=ACCEPT
+
+commit
