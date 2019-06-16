@@ -1,0 +1,4 @@
+#!/bin/ash
+
+killall smbd
+killall nmbd

@@ -1,0 +1,5 @@
+#!/bin/ash
+
+cat /etc/samba/smb0.conf > /etc/samba/smb.conf
+nmbd -D
+smbd -D
