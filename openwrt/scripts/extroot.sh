@@ -28,6 +28,7 @@ echo "Transferring Data"
 
 mount /dev/sda1 /mnt/sda1
 cp -a -f /overlay/. /mnt/sda1
+rm -rf /mnt/sda1/*
 umount /mnt/sda1
 
 
